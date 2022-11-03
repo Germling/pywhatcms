@@ -13,7 +13,9 @@ def whatcms(key, url):
     whatcms.msg = data['result']['msg']
     whatcms.id = data['result']['id']
     whatcms.request = data['request']
-    whatcms.request_web = data['request_web']
+
+# Deleted this line because it's deprecated and leads to errors. See "Deprecated Features" at https://whatcms.org/Documentation#toc-request-parameters1
+# whatcms.request_web = data['request_web']
 
     print(f'''
 Status Code : {whatcms.code}
